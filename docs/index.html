@@ -1,16 +1,163 @@
-<!DOCTYPE html><html lang="es"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>Tienda Vanidosas</title><!-- Google Fonts (Radley) si no lo tienes ya en el CSS --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet"><!-- Aquí puedes añadir más <meta>, favicon, etc. --><!-- SEO Meta Description --><meta name="description" content="Tienda Vanidosas - Medicina estética y belleza avanzada. Tratamientos personalizados para el cuidado de tu piel."><link rel="stylesheet" href="/assets/findex.BtCjuWfp.css">
-<style>@import"https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap";:root{--bg: #FDF2E9;--text: #847360;--belleza-text: #A46460 }*{font-family:Radley,serif;font-weight:400;font-style:normal}.card-custom{width:70%;background-color:#fff;padding:2rem;border-radius:8px;box-shadow:0 4px 8px #0000001a;text-align:center}.full-page-container{min-height:100vh;background-color:var(--bg);color:var(--text);display:flex;align-items:center;justify-content:center;padding:1rem;overflow-y:auto}.column{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%}.column-title{margin-bottom:1rem;font-family:Radley,serif;font-size:40px;font-weight:400;line-height:50.55px;text-align:center}.column-text{margin-top:1rem;text-align:center;font-family:Radley,serif;font-size:18px;font-weight:400;line-height:18.96px;width:50%}.svg-icon{width:100px;height:100px}@media (max-width: 576px){.card-custom{width:90%;padding:1rem;margin:15px}}.oculto-movil{display:flex;justify-content:center}@media screen and (max-width: 768px){.oculto-movil{display:none}}
-</style></head> <body>  <main> <div class="container-fluid full-page-container"> <div class="row w-100"> <a href="/clinica" class="col-md-6 d-flex justify-content-center align-items-center column" style="text-decoration:none; cursor:pointer;"> <div class="card-custom" style="color: #847360;"> <h2 class="column-title">Clinica</h2> <div> <img style="width:150px" src="/public/Vectors/Introclinica.svg" alt="Intro Clinica"> </div> <div class="oculto-movil"> <p class="column-text">
-La medicina estética ofrece tratamientos no invasivos para
-                mejorar la apariencia y salud de la piel.
-</p> </div> <div class="oculto-movil"> <p class="column-text">
-Con técnicas avanzadas, logramos resultados naturales y
-                personalizados, realzando tu belleza sin necesidad de cirugías.
-</p> </div> </div> </a> <a href="/belleza" class="col-md-6 d-flex justify-content-center align-items-center column" style="text-decoration:none; cursor:pointer;"> <div class="card-custom" style="color: #A46460;"> <h2 class="column-title">Belleza</h2> <div> <img style="width:150px" src="/public/Vectors/Manicura.svg" alt="Manicura"> </div> <div class="oculto-movil"> <p class="column-text">
-La estética avanzada combina tecnología de vanguardia con
-                tratamientos estéticos para obtener resultados visibles y
-                duraderos.
-</p> </div> <div class="oculto-movil"> <p class="column-text">
-Mejora el aspecto de tu piel y cuerpo con soluciones
-                personalizadas que cuidan cada detalle.
-</p> </div> </div> </a> </div> </div> </main>   </body></html>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tienda Vanidosas</title>
+    <!-- Google Fonts (Radley) si no lo tienes ya en el CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Aquí puedes añadir más <meta>, favicon, etc. -->
+    <!-- SEO Meta Description -->
+    <meta
+      name="description"
+      content="Tienda Vanidosas - Medicina estética y belleza avanzada. Tratamientos personalizados para el cuidado de tu piel."
+    />
+    <link rel="stylesheet" href="/assets/findex.BtCjuWfp.css" />
+    <style>
+      @import "https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap";
+      :root {
+        --bg: #fdf2e9;
+        --text: #847360;
+        --belleza-text: #a46460;
+      }
+      * {
+        font-family: Radley, serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .card-custom {
+        width: 70%;
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px #0000001a;
+        text-align: center;
+      }
+      .full-page-container {
+        min-height: 100vh;
+        background-color: var(--bg);
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        overflow-y: auto;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      .column-title {
+        margin-bottom: 1rem;
+        font-family: Radley, serif;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 50.55px;
+        text-align: center;
+      }
+      .column-text {
+        margin-top: 1rem;
+        text-align: center;
+        font-family: Radley, serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18.96px;
+        width: 50%;
+      }
+      .svg-icon {
+        width: 100px;
+        height: 100px;
+      }
+      @media (max-width: 576px) {
+        .card-custom {
+          width: 90%;
+          padding: 1rem;
+          margin: 15px;
+        }
+      }
+      .oculto-movil {
+        display: flex;
+        justify-content: center;
+      }
+      @media screen and (max-width: 768px) {
+        .oculto-movil {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid full-page-container">
+        <div class="row w-100">
+          <a
+            href="/clinica"
+            class="col-md-6 d-flex justify-content-center align-items-center column"
+            style="text-decoration: none; cursor: pointer"
+          >
+            <div class="card-custom" style="color: #847360">
+              <h2 class="column-title">Clinica</h2>
+              <div>
+                <img
+                  style="width: 150px"
+                  src="/Vectors/Introclinica.svg"
+                  alt="Intro Clinica"
+                />
+              </div>
+              <div class="oculto-movil">
+                <p class="column-text">
+                  La medicina estética ofrece tratamientos no invasivos para
+                  mejorar la apariencia y salud de la piel.
+                </p>
+              </div>
+              <div class="oculto-movil">
+                <p class="column-text">
+                  Con técnicas avanzadas, logramos resultados naturales y
+                  personalizados, realzando tu belleza sin necesidad de
+                  cirugías.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="/belleza"
+            class="col-md-6 d-flex justify-content-center align-items-center column"
+            style="text-decoration: none; cursor: pointer"
+          >
+            <div class="card-custom" style="color: #a46460">
+              <h2 class="column-title">Belleza</h2>
+              <div>
+                <img
+                  style="width: 150px"
+                  src="/Vectors/Manicura.svg"
+                  alt="Manicura"
+                />
+              </div>
+              <div class="oculto-movil">
+                <p class="column-text">
+                  La estética avanzada combina tecnología de vanguardia con
+                  tratamientos estéticos para obtener resultados visibles y
+                  duraderos.
+                </p>
+              </div>
+              <div class="oculto-movil">
+                <p class="column-text">
+                  Mejora el aspecto de tu piel y cuerpo con soluciones
+                  personalizadas que cuidan cada detalle.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
