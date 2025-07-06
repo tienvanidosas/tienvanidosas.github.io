@@ -1,687 +1,97 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Tienda Vanidosas</title>
-    <!-- Google Fonts (Radley) si no lo tienes ya en el CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Aquí puedes añadir más <meta>, favicon, etc. -->
-    <!-- SEO Meta Description -->
-    <meta
-      name="description"
-      content="Tienda Vanidosas - Medicina estética y belleza avanzada. Tratamientos personalizados para el cuidado de tu piel."
-    />
-    <style>
-      .map-container[data-astro-cid-bfjstmwk] {
-        width: 100%;
-        min-height: 60vh;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .location-item[data-astro-cid-bfjstmwk] {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        margin-bottom: 15px;
-        width: 70%;
-      }
-      .location-item[data-astro-cid-bfjstmwk] svg[data-astro-cid-bfjstmwk] {
-        flex-shrink: 0;
-        color: #5a4a42;
-      }
-      .location-item[data-astro-cid-bfjstmwk] p[data-astro-cid-bfjstmwk] {
-        margin: 0;
-        font-size: 1rem;
-        color: #7d6e63;
-      }
-      @media (max-width: 576px) {
-        .info-h4[data-astro-cid-bfjstmwk] {
-          font-family: Radley;
-          font-size: 30px;
-          font-weight: 400;
-          line-height: 75.82px;
-          text-align: center;
-          text-underline-position: from-font;
-          text-decoration-skip-ink: none;
-          color: #837f7f;
-        }
-      }
-      .custom-margin[data-astro-cid-bfjstmwk] {
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-      .info-card[data-astro-cid-bfjstmwk] {
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px #0000001a;
-        margin: 10px;
-        background-color: #fff;
-      }
-      .info-h4[data-astro-cid-bfjstmwk] {
-        font-family: Radley;
-        font-size: 60px;
-        font-weight: 400;
-        line-height: 75.82px;
-        text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        color: #837f7f;
-      }
-      .info-p[data-astro-cid-bfjstmwk] {
-        font-family: Quicksand;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 25px;
-        text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        color: #847360;
-      }
-      .service-card[data-astro-cid-bfjstmwk] {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        height: 100%;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-      }
-      .service-card[data-astro-cid-bfjstmwk] img[data-astro-cid-bfjstmwk] {
-        height: auto;
-      }
-      .row[data-astro-cid-bfjstmwk] {
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-      }
-      .col-md-3[data-astro-cid-bfjstmwk] {
-        display: flex;
-      }
-      @media (max-width: 768px) {
-        .row-movile[data-astro-cid-bfjstmwk] {
-          max-width: 85%;
-          margin: 0 auto;
-        }
-      }
-      .icon-text[data-astro-cid-bfjstmwk] {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 15px;
-      }
-      .icon-text[data-astro-cid-bfjstmwk] img[data-astro-cid-bfjstmwk] {
-        max-width: 80%;
-        height: auto;
-      }
-    </style>
-    <link rel="stylesheet" href="/assets/findex.BtCjuWfp.css" />
-    <link rel="stylesheet" href="/assets/fbelleza.IL98OmO0.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg nav-bg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/belleza"></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-              <path
-                stroke="#A46460"
-                stroke-linecap="round"
-                stroke-miterlimit="10"
-                stroke-width="2"
-                d="M4 7h22M4 15h22M4 23h22"
-              ></path>
-            </svg>
-          </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link nav-text"
-                href="/belleza"
-                id="InicioDropdown"
-                aria-expanded="false"
-              >
-                Inicio
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link nav-text dropdown-toggle"
-                href="#"
-                id="ManosDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Manos
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="ManosDropdown"
-                style="background-color: var(--navBg)"
-              >
-                <li>
-                  <a
-                    class="dropdown-item nav-text"
-                    href="/belleza/manicura-tradicional"
-                  >
-                    Manicura Tradicional
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item nav-text"
-                    href="/belleza/pedicura-spa"
-                  >
-                    Pedicura Spa
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link nav-text dropdown-toggle"
-                href="#"
-                id="PiesDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Pies
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="PiesDropdown"
-                style="background-color: var(--navBg)"
-              >
-                <li>
-                  <a
-                    class="dropdown-item nav-text"
-                    href="/belleza/pedicura-spa"
-                  >
-                    Pedicura Spa
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link nav-text dropdown-toggle"
-                href="#"
-                id="CaraDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Cara
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="CaraDropdown"
-                style="background-color: var(--navBg)"
-              >
-                <li>
-                  <a
-                    class="dropdown-item nav-text"
-                    href="/belleza/facial-limpieza"
-                  >
-                    Limpieza Facial
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="full-page-container" data-astro-cid-bfjstmwk>
-      <div class="row" style="width: 100%" data-astro-cid-bfjstmwk>
-        <div
-          class="col-md-6 d-none d-md-block position-relative"
-          style="height: 100vh"
-          data-astro-cid-bfjstmwk
-        >
-          <img
-            src="/Assets/IMG_6648.webp"
-            class="img-fluid position-absolute w-100 h-100"
-            alt="Imagen de fondo"
-            style="object-fit: inherit"
-            data-astro-cid-bfjstmwk
-          />
-        </div>
-        <!-- Columna 1: Imagen pegada al fondo -->
-        <div
-          class="col-md-6 d-flex flex-column justify-content-center align-items-md-end align-items-center text-md-end text-center p-4"
-          data-astro-cid-bfjstmwk
-        >
-          <h1 class="mb-3" data-astro-cid-bfjstmwk>Manicura & Pedicura</h1>
-          <p class="mb-3 p-title" data-astro-cid-bfjstmwk>
-            La elegrancia empieza por unas manos bonitas, consiéntete con tu
-            manicura tradicional, semipermanete o de gel
-          </p>
-          <a href="#" class="btn btn-title" data-astro-cid-bfjstmwk
-            >Reservar cita</a
-          >
-        </div>
-      </div>
-    </div>
-    <div
-      class="container d-flex flex-column justify-content-center align-items-center"
-      style="
-        min-height: 100vh;
-        background-image: url('/Assets/Ilustración_sin_título.webp');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-width: 100%;
-      "
-      data-astro-cid-bfjstmwk
-    >
-      <!-- Título principal -->
-      <h2 class="section-title" data-astro-cid-bfjstmwk>
-        Descubre todos nuestros tratamientos
-      </h2>
-      <!-- Sección de iconos -->
-      <div
-        class="row justify-content-center text-center my-4"
-        data-astro-cid-bfjstmwk
-      >
-        <div
-          class="col-lg-2 col-md-4 col-sm-6 icon-text"
-          data-astro-cid-bfjstmwk
-        >
-          <img
-            src="/Vectors/Faciales.svg"
-            alt="Faciales"
-            class="img-fluid"
-            style="width: 150px"
-            data-astro-cid-bfjstmwk
-          />
-          <h5 data-astro-cid-bfjstmwk>Faciales</h5>
-          <p data-astro-cid-bfjstmwk>
-            Tratamientos faciales efectivos e indoloros
-          </p>
-        </div>
-        <div
-          class="col-lg-2 col-md-4 col-sm-6 icon-text"
-          data-astro-cid-bfjstmwk
-        >
-          <img
-            src="/Vectors/Depilacion.svg"
-            alt="Depilación"
-            class="img-fluid"
-            style="width: 150px"
-            data-astro-cid-bfjstmwk
-          />
-          <h5 data-astro-cid-bfjstmwk>Depilación</h5>
-          <p data-astro-cid-bfjstmwk>
-            Lasér diodo y cera para distintas partes del cuerpo
-          </p>
-        </div>
-        <div
-          class="col-lg-2 col-md-4 col-sm-6 icon-text"
-          data-astro-cid-bfjstmwk
-        >
-          <img
-            src="/Vectors/Cejasypestanas.svg"
-            alt="Cejas y pestañas"
-            class="img-fluid"
-            style="width: 150px"
-            data-astro-cid-bfjstmwk
-          />
-          <h5 data-astro-cid-bfjstmwk>Cejas y pestañas</h5>
-          <p data-astro-cid-bfjstmwk>
-            Lifting de pestañas y microshading para cejas
-          </p>
-        </div>
-        <div
-          class="col-lg-2 col-md-4 col-sm-6 icon-text"
-          data-astro-cid-bfjstmwk
-        >
-          <img
-            src="/Vectors/Manicura.svg"
-            alt="Uñas"
-            class="img-fluid"
-            style="width: 150px"
-            data-astro-cid-bfjstmwk
-          />
-          <h5 data-astro-cid-bfjstmwk>Uñas</h5>
-          <p data-astro-cid-bfjstmwk>
-            Manicura y pedicura semipermanente, tradicionales y de gel
-          </p>
-        </div>
-        <div
-          class="col-lg-2 col-md-4 col-sm-6 icon-text"
-          data-astro-cid-bfjstmwk
-        >
-          <img
-            src="/Vectors/Corporal.svg"
-            alt="Corporal"
-            class="img-fluid"
-            style="width: 150px"
-            data-astro-cid-bfjstmwk
-          />
-          <h5 data-astro-cid-bfjstmwk>Corporal</h5>
-          <p data-astro-cid-bfjstmwk>
-            Light sculpting para disminuir grasa localizada
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="highlight-section d-flex align-items-center"
-      style="min-height: 100vh"
-      data-astro-cid-bfjstmwk
-    >
-      <div class="container" data-astro-cid-bfjstmwk>
-        <div class="row no-gutters" data-astro-cid-bfjstmwk>
-          <!-- Cuadro 1 -->
-          <div class="col-md-4 d-flex" data-astro-cid-bfjstmwk>
-            <div class="highlight-box" data-astro-cid-bfjstmwk>
-              <div class="image-container" data-astro-cid-bfjstmwk>
-                <img
-                  src="/Assets/IMG_7615.webp"
-                  alt="Cejas con Henna"
-                  data-astro-cid-bfjstmwk
-                />
-              </div>
-              <div class="highlight-text" data-astro-cid-bfjstmwk>
-                <h5 data-astro-cid-bfjstmwk>Cejas con Henna</h5>
-                <p data-astro-cid-bfjstmwk>
-                  Conseguir volumen en tus cejas y que estén delineadas por más
-                  tiempo sin maquillaje.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Cuadro 2 (Invertido: Texto encima, foto debajo) -->
-          <div class="col-md-4 d-flex" data-astro-cid-bfjstmwk>
-            <div class="highlight-box" data-astro-cid-bfjstmwk>
-              <div class="highlight-text" data-astro-cid-bfjstmwk>
-                <h5 data-astro-cid-bfjstmwk>Microblading de cejas</h5>
-                <p data-astro-cid-bfjstmwk>
-                  Técnica que combina el microblading con el sombreado de las
-                  cejas para mayor profundidad.
-                </p>
-              </div>
-              <div class="image-container" data-astro-cid-bfjstmwk>
-                <img
-                  src="/Assets/IMG_7613.webp"
-                  alt="Microblading de cejas"
-                  data-astro-cid-bfjstmwk
-                />
-              </div>
-            </div>
-          </div>
-          <!-- Cuadro 3 -->
-          <div class="col-md-4 d-flex" data-astro-cid-bfjstmwk>
-            <div class="highlight-box" data-astro-cid-bfjstmwk>
-              <div class="image-container" data-astro-cid-bfjstmwk>
-                <img
-                  src="/Assets/pestanasbelleza.webp"
-                  alt="Extensiones de pestañas"
-                  data-astro-cid-bfjstmwk
-                />
-              </div>
-              <div class="highlight-text" data-astro-cid-bfjstmwk>
-                <h5 data-astro-cid-bfjstmwk>Extensiones de pestañas</h5>
-                <p data-astro-cid-bfjstmwk>
-                  Parecerán visiblemente más densas con una variante natural.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial" data-astro-cid-bfjstmwk>
-      <p class="testimonial-text" data-astro-cid-bfjstmwk>
-        Personal muy competente y amable! Desafortunadamente no pude hacer el
-        tratamiento que había reservado porque no es apto a mi piel, pero Karina
-        me aconsejó otro y fue muy agradable. Ahora a la espera de los
-        resultados!"
-      </p>
-      <p class="testimonial-text testimonial-author" data-astro-cid-bfjstmwk>
-        Beatrice
-      </p>
-    </div>
-    <div
-      class="row-movile row justify-content-center text-center my-5"
-      data-astro-cid-bfjstmwk
-    >
-      <div class="col-md-3 d-flex" data-astro-cid-bfjstmwk>
-        <div class="service-card" data-astro-cid-bfjstmwk>
-          <img
-            src="/Assets/IMG_7428.webp"
-            alt="Manicura y pedicura spa"
-            data-astro-cid-bfjstmwk
-          />
-          <h5 data-astro-cid-bfjstmwk>Manicura y pedicura spa</h5>
-          <p data-astro-cid-bfjstmwk>
-            Para distintas zonas de tu cuerpo, con los mejores productos y la
-            mejor técnica.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-3 d-flex" data-astro-cid-bfjstmwk>
-        <div class="service-card" data-astro-cid-bfjstmwk>
-          <img
-            src="/Assets/IMG_7617.webp"
-            alt="Bronceado DHA"
-            data-astro-cid-bfjstmwk
-          />
-          <h5 data-astro-cid-bfjstmwk>Bronceado DHA</h5>
-          <p data-astro-cid-bfjstmwk>
-            Para distintas zonas de tu cuerpo, con los mejores productos y la
-            mejor técnica.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-3 d-flex" data-astro-cid-bfjstmwk>
-        <div class="service-card" data-astro-cid-bfjstmwk>
-          <img
-            src="/Assets/IMG_7429.webp"
-            alt="Maquillaje"
-            data-astro-cid-bfjstmwk
-          />
-          <h5 data-astro-cid-bfjstmwk>Maquillaje</h5>
-          <p data-astro-cid-bfjstmwk>
-            Para distintas zonas de tu cuerpo, con los mejores productos y la
-            mejor técnica.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="treatment-section d-flex flex-column justify-content-center align-items-center text-center"
-      style="
-        min-height: 100vh;
-        background-image: url('/Assets/Ilustración_sin_título.webp');
-        background-size: cover; /* La imagen cubrirá todo el área */
-        background-position: center; /* Centra la imagen */
-        background-repeat: no-repeat; /* Evita que la imagen se repita */
-        /* padding-top: 15px; */
-        /* padding-bottom: 15px; */
-        min-width: 100%;
-      "
-      data-astro-cid-bfjstmwk
-    >
-      <div class="col-10" data-astro-cid-bfjstmwk>
-        <h2 class="treatment-title" data-astro-cid-bfjstmwk>
-          Los mejores tratamientos para que siempre tengas buena cara
-        </h2>
-      </div>
-      <div
-        class="row justify-content-center align-items-center text-center mt-4"
-        data-astro-cid-bfjstmwk
-      >
-        <div class="col-md-2" data-astro-cid-bfjstmwk>
-          <h5 class="treatment-subtitle" data-astro-cid-bfjstmwk>
-            Tratamiento de manchas
-          </h5>
-          <p class="treatment-text" data-astro-cid-bfjstmwk>
-            Aumentar la luminosidad de la piel, reducir melasmas de profundidad
-            media y eliminar los superficiales y otras manchas superficiales.
-          </p>
-        </div>
-        <div class="col-md-2" data-astro-cid-bfjstmwk>
-          <h5 class="treatment-subtitle" data-astro-cid-bfjstmwk>
-            Peeling medical
-          </h5>
-          <p class="treatment-text" data-astro-cid-bfjstmwk>
-            El peeling químico “Mandelico y Láctico” para obtener unos
-            resultados excelentes en manchas, arrugitas e imperfecciones
-            cutáneas.
-          </p>
-        </div>
-        <div class="col-md-2" data-astro-cid-bfjstmwk>
-          <h5 class="treatment-subtitle" data-astro-cid-bfjstmwk>Antiaging</h5>
-          <p class="treatment-text" data-astro-cid-bfjstmwk>
-            Rellenar arrugas superficiales y medias con ácido hialurónico de
-            alta intensidad. Para pieles con arrugas o con falta de densidad.
-          </p>
-        </div>
-        <div class="col-md-2" data-astro-cid-bfjstmwk>
-          <h5 class="treatment-subtitle" data-astro-cid-bfjstmwk>
-            Tratamiento Acné
-          </h5>
-          <p class="treatment-text" data-astro-cid-bfjstmwk>
-            Pieles con secuelas de acné donde predomina el tono rosado de las
-            cicatrices y con surcos atróficos moderados. Eliminar las marcas
-            post-acné suaves o incipientes.
-          </p>
-        </div>
-      </div>
-      <a href="#" class="btn-reserva mt-4" data-astro-cid-bfjstmwk
-        >Reservar cita</a
-      >
-    </div>
-    <div
-      class="info-section"
-      style="min-height: 60vh; background-color: #f0e9e1"
-      data-astro-cid-bfjstmwk
-    >
-      <!-- Redes Sociales -->
-      <div class="social-icons" data-astro-cid-bfjstmwk>
-        <a href="#" data-astro-cid-bfjstmwk
-          ><i class="fab fa-instagram" data-astro-cid-bfjstmwk></i
-        ></a>
-        <a href="#" data-astro-cid-bfjstmwk
-          ><i class="fab fa-facebook-f" data-astro-cid-bfjstmwk></i
-        ></a>
-        <a href="#" data-astro-cid-bfjstmwk
-          ><i class="fab fa-tiktok" data-astro-cid-bfjstmwk></i
-        ></a>
-      </div>
-      <div
-        class="row text-center"
-        style="
-          /* align-items: stretch; */
-          display: flex; /* Activa Flexbox */
-          flex-wrap: wrap; /* Permite que los elementos se ajusten en filas si el espacio es insuficiente */
-          justify-content: center; /* Centra los elementos horizontalmente */
-          align-items: stretch; /* Hace que todos los elementos hijos tengan la misma altura */
-          text-align: center; /* Centra el contenido del texto */
-          margin-right: 0px;
-          margin-left: 0px;
-        "
-        data-astro-cid-bfjstmwk
-      >
-        <div class="col-md-5 info-card custom-margin" data-astro-cid-bfjstmwk>
-          <h4 class="info-h4" data-astro-cid-bfjstmwk>Horarios</h4>
-          <p class="info-p" data-astro-cid-bfjstmwk>
-            Lunes: Cerrado
-            <br data-astro-cid-bfjstmwk />Martes : 10:00 - 20:00
-            <br data-astro-cid-bfjstmwk />Miercoles: 10:00 - 20:00
-            <br data-astro-cid-bfjstmwk />Jueves: 10:00 - 20:00
-            <br data-astro-cid-bfjstmwk />Viernes: 10:00 - 20:00
-            <br data-astro-cid-bfjstmwk />Sabado: 10:00 - 20:00
-            <br data-astro-cid-bfjstmwk />Domingo: 10:00 - 20:00
-          </p>
-        </div>
-        <div class="col-md-5 info-card custom-margin" data-astro-cid-bfjstmwk>
-          <h4 class="info-h4" data-astro-cid-bfjstmwk>Localización</h4>
-          <div
-            style="
-              display: flex;
-              flex-direction: column;
-              justify-content: center; /* Centra verticalmente */
-              align-items: center; /* Centra horizontalmente */
-              text-align: center; /* Opcional, para centrar texto */
-            "
-            data-astro-cid-bfjstmwk
-          >
-            <div class="location-item" data-astro-cid-bfjstmwk>
-              <!--?xml version="1.0" encoding="utf-8"?-->
-              <!-- Generator: Adobe Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg
-                version="1.1"
-                id="Capa_de_vector_1_"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 300 300"
-                style="enable-background: new 0 0 300 300; width: 50px"
-                xml:space="preserve"
-                data-astro-cid-bfjstmwk
-              >
-                <style type="text/css">
-                  .st0 {
-                    fill: #a46460;
-                  }
-                  .st1 {
-                    fill: #ffffff;
-                  }
-                </style>
-                <ellipse
-                  class="st0"
-                  cx="149.76"
-                  cy="150.25"
-                  rx="147.5"
-                  ry="147"
-                  data-astro-cid-bfjstmwk
-                ></ellipse>
-                <path
-                  class="st1"
-                  d="M85.69,116.94c0,0.03,0,0.06,0,0.09c0,0,0,0.01,0,0.01C85.69,117.01,85.69,116.98,85.69,116.94z"
-                  data-astro-cid-bfjstmwk
-                ></path>
-                <path
-                  class="st1"
-                  d="M85.67,117.22C85.67,117.22,85.67,117.22,85.67,117.22c0,0.01,0,0.03,0,0.04
-                            C85.67,117.25,85.67,117.24,85.67,117.22z"
-                  data-astro-cid-bfjstmwk
-                ></path>
-                <path
-                  class="st1"
-                  d="M85.66,117.29c0,0.01,0,0.01,0,0.02C85.66,117.3,85.66,117.29,85.66,117.29z"
-                  data-astro-cid-bfjstmwk
-                ></path>
-                <path
-                  class="st1"
-                  d="M149.66,237.92c-0.1,0.02-0.21,0.03-0.31,0.03c-0.37,0-0.73-0.11-1.02-0.36c-4.43-3.7-8.67-7.63-12.71-11.76
+<!DOCTYPE html><html lang="es"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>Tienda Vanidosas</title><!-- Google Fonts (Radley) si no lo tienes ya en el CSS --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet"><!-- Aquí puedes añadir más <meta>, favicon, etc. --><!-- SEO Meta Description --><meta name="description" content="Tienda Vanidosas - Medicina estética y belleza avanzada. Tratamientos personalizados para el cuidado de tu piel."><style>.map-container[data-astro-cid-bfjstmwk]{width:100%;min-height:60vh;margin-top:20px;display:flex;justify-content:center;align-items:center}.location-item[data-astro-cid-bfjstmwk]{display:flex;align-items:center;gap:15px;margin-bottom:15px;width:70%}.location-item[data-astro-cid-bfjstmwk] svg[data-astro-cid-bfjstmwk]{flex-shrink:0;color:#5a4a42}.location-item[data-astro-cid-bfjstmwk] p[data-astro-cid-bfjstmwk]{margin:0;font-size:1rem;color:#7d6e63}@media (max-width: 576px){.info-h4[data-astro-cid-bfjstmwk]{font-family:Radley;font-size:30px;font-weight:400;line-height:75.82px;text-align:center;text-underline-position:from-font;text-decoration-skip-ink:none;color:#837f7f}}.custom-margin[data-astro-cid-bfjstmwk]{margin-left:10px;margin-right:10px}.info-card[data-astro-cid-bfjstmwk]{padding:20px;border-radius:10px;box-shadow:0 2px 8px #0000001a;margin:10px;background-color:#fff}.info-h4[data-astro-cid-bfjstmwk]{font-family:Radley;font-size:60px;font-weight:400;line-height:75.82px;text-align:center;text-underline-position:from-font;text-decoration-skip-ink:none;color:#837f7f}.info-p[data-astro-cid-bfjstmwk]{font-family:Quicksand;font-size:20px;font-weight:500;line-height:25px;text-align:center;text-underline-position:from-font;text-decoration-skip-ink:none;color:#847360}.service-card[data-astro-cid-bfjstmwk]{display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;height:100%;padding:20px;border:1px solid #ddd;border-radius:10px}.service-card[data-astro-cid-bfjstmwk] img[data-astro-cid-bfjstmwk]{height:auto}.row[data-astro-cid-bfjstmwk]{display:flex;justify-content:center;align-items:stretch}.col-md-3[data-astro-cid-bfjstmwk]{display:flex}@media (max-width: 768px){.row-movile[data-astro-cid-bfjstmwk]{max-width:85%;margin:0 auto}}.icon-text[data-astro-cid-bfjstmwk]{display:flex;flex-direction:column;align-items:center;text-align:center;padding:15px}.icon-text[data-astro-cid-bfjstmwk] img[data-astro-cid-bfjstmwk]{max-width:80%;height:auto}
+</style>
+<link rel="stylesheet" href="/assets/findex.BtCjuWfp.css">
+<link rel="stylesheet" href="/assets/fbelleza.IL98OmO0.css"></head> <body> <nav class="navbar navbar-expand-lg nav-bg"> <div class="container-fluid"> <a class="navbar-brand" href="/belleza"></a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"> <path stroke="#A46460" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path> </svg> </span> </button> <div class="collapse navbar-collapse" id="navbarNav"> <ul class="navbar-nav"> <li class="nav-item dropdown"> <a class="nav-link nav-text" href="/belleza" id="InicioDropdown" aria-expanded="false">
+Inicio
+</a> </li> <li class="nav-item dropdown"> <a class="nav-link nav-text dropdown-toggle" href="#" id="ManosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Manos </a> <ul class="dropdown-menu" aria-labelledby="ManosDropdown" style="background-color: var(--navBg);"> <li> <a class="dropdown-item nav-text" href="/belleza/manicura-tradicional"> Manicura Tradicional </a> </li><li> <a class="dropdown-item nav-text" href="/belleza/pedicura-spa"> Pedicura Spa </a> </li> </ul> </li><li class="nav-item dropdown"> <a class="nav-link nav-text dropdown-toggle" href="#" id="PiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pies </a> <ul class="dropdown-menu" aria-labelledby="PiesDropdown" style="background-color: var(--navBg);"> <li> <a class="dropdown-item nav-text" href="/belleza/pedicura-spa"> Pedicura Spa </a> </li> </ul> </li><li class="nav-item dropdown"> <a class="nav-link nav-text dropdown-toggle" href="#" id="CaraDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Cara </a> <ul class="dropdown-menu" aria-labelledby="CaraDropdown" style="background-color: var(--navBg);"> <li> <a class="dropdown-item nav-text" href="/belleza/facial-limpieza"> Limpieza Facial </a> </li> </ul> </li> </ul> </div> </div> </nav>   <div class="full-page-container" data-astro-cid-bfjstmwk> <div class="row" style="
+    width: 100%;
+" data-astro-cid-bfjstmwk> <div class="col-md-6 d-none d-md-block position-relative" style="height: 100vh;" data-astro-cid-bfjstmwk> <img src="/Imgs/IMG_6648.webp" class="img-fluid position-absolute w-100 h-100" alt="Imagen de fondo" style="object-fit: inherit;" data-astro-cid-bfjstmwk> </div> <!-- Columna 1: Imagen pegada al fondo --> <div class="col-md-6 d-flex flex-column justify-content-center align-items-md-end align-items-center text-md-end text-center p-4" data-astro-cid-bfjstmwk> <h1 class="mb-3" data-astro-cid-bfjstmwk>Manicura & Pedicura</h1> <p class="mb-3 p-title" data-astro-cid-bfjstmwk>
+La elegrancia empieza por unas manos bonitas, consiéntete con tu
+          manicura tradicional, semipermanete o de gel
+</p> <a href="#" class="btn btn-title" data-astro-cid-bfjstmwk>Reservar cita</a> </div> </div> </div>  <div class="container d-flex flex-column justify-content-center align-items-center" style="
+    min-height: 100vh;
+    background-image: url('/Imgs/Ilustración_sin_título.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 100%;
+" data-astro-cid-bfjstmwk> <!-- Título principal --> <h2 class="section-title" data-astro-cid-bfjstmwk>Descubre todos nuestros tratamientos</h2> <!-- Sección de iconos --> <div class="row justify-content-center text-center my-4" data-astro-cid-bfjstmwk> <div class="col-lg-2 col-md-4 col-sm-6 icon-text" data-astro-cid-bfjstmwk> <img src="/Vectors/Faciales.svg" alt="Faciales" class="img-fluid" style="width:150px" data-astro-cid-bfjstmwk> <h5 data-astro-cid-bfjstmwk>Faciales</h5> <p data-astro-cid-bfjstmwk>Tratamientos faciales efectivos e indoloros</p> </div> <div class="col-lg-2 col-md-4 col-sm-6 icon-text" data-astro-cid-bfjstmwk> <img src="/Vectors/Depilacion.svg" alt="Depilación" class="img-fluid" style="width:150px" data-astro-cid-bfjstmwk> <h5 data-astro-cid-bfjstmwk>Depilación</h5> <p data-astro-cid-bfjstmwk>Lasér diodo y cera para distintas partes del cuerpo</p> </div> <div class="col-lg-2 col-md-4 col-sm-6 icon-text" data-astro-cid-bfjstmwk> <img src="/Vectors/Cejasypestanas.svg" alt="Cejas y pestañas" class="img-fluid" style="width:150px" data-astro-cid-bfjstmwk> <h5 data-astro-cid-bfjstmwk>Cejas y pestañas</h5> <p data-astro-cid-bfjstmwk>Lifting de pestañas y microshading para cejas</p> </div> <div class="col-lg-2 col-md-4 col-sm-6 icon-text" data-astro-cid-bfjstmwk> <img src="/Vectors/Manicura.svg" alt="Uñas" class="img-fluid" style="width:150px" data-astro-cid-bfjstmwk> <h5 data-astro-cid-bfjstmwk>Uñas</h5> <p data-astro-cid-bfjstmwk>Manicura y pedicura semipermanente, tradicionales y de gel</p> </div> <div class="col-lg-2 col-md-4 col-sm-6 icon-text" data-astro-cid-bfjstmwk> <img src="/Vectors/Corporal.svg" alt="Corporal" class="img-fluid" style="width:150px" data-astro-cid-bfjstmwk> <h5 data-astro-cid-bfjstmwk>Corporal</h5> <p data-astro-cid-bfjstmwk>Light sculpting para disminuir grasa localizada</p> </div> </div> </div>  <div class="highlight-section d-flex align-items-center" style="min-height: 100vh;" data-astro-cid-bfjstmwk> <div class="container" data-astro-cid-bfjstmwk> <div class="row no-gutters" data-astro-cid-bfjstmwk> <!-- Cuadro 1 --> <div class="col-md-4 d-flex" data-astro-cid-bfjstmwk> <div class="highlight-box" data-astro-cid-bfjstmwk> <div class="image-container" data-astro-cid-bfjstmwk> <img src="/Imgs/IMG_7615.webp" alt="Cejas con Henna" data-astro-cid-bfjstmwk> </div> <div class="highlight-text" data-astro-cid-bfjstmwk> <h5 data-astro-cid-bfjstmwk>Cejas con Henna</h5> <p data-astro-cid-bfjstmwk>
+Conseguir volumen en tus cejas y que estén delineadas por más
+                tiempo sin maquillaje.
+</p> </div> </div> </div> <!-- Cuadro 2 (Invertido: Texto encima, foto debajo) --> <div class="col-md-4 d-flex" data-astro-cid-bfjstmwk> <div class="highlight-box" data-astro-cid-bfjstmwk> <div class="highlight-text" data-astro-cid-bfjstmwk> <h5 data-astro-cid-bfjstmwk>Microblading de cejas</h5> <p data-astro-cid-bfjstmwk>
+Técnica que combina el microblading con el sombreado de las
+                cejas para mayor profundidad.
+</p> </div> <div class="image-container" data-astro-cid-bfjstmwk> <img src="/Imgs/IMG_7613.webp" alt="Microblading de cejas" data-astro-cid-bfjstmwk> </div> </div> </div> <!-- Cuadro 3 --> <div class="col-md-4 d-flex" data-astro-cid-bfjstmwk> <div class="highlight-box" data-astro-cid-bfjstmwk> <div class="image-container" data-astro-cid-bfjstmwk> <img src="/Imgs/pestanasbelleza.webp" alt="Extensiones de pestañas" data-astro-cid-bfjstmwk> </div> <div class="highlight-text" data-astro-cid-bfjstmwk> <h5 data-astro-cid-bfjstmwk>Extensiones de pestañas</h5> <p data-astro-cid-bfjstmwk>Parecerán visiblemente más densas con una variante natural.</p> </div> </div> </div> </div> </div> </div>  <div class="testimonial" data-astro-cid-bfjstmwk> <p class="testimonial-text" data-astro-cid-bfjstmwk>
+Personal muy competente y amable! Desafortunadamente no pude hacer el
+      tratamiento que había reservado porque no es apto a mi piel, pero Karina
+      me aconsejó otro y fue muy agradable. Ahora a la espera de los
+      resultados!"
+</p> <p class="testimonial-text testimonial-author" data-astro-cid-bfjstmwk>Beatrice</p> </div>   <div class="row-movile row justify-content-center text-center my-5" data-astro-cid-bfjstmwk> <div class="col-md-3 d-flex" data-astro-cid-bfjstmwk> <div class="service-card" data-astro-cid-bfjstmwk> <img src="/Imgs/IMG_7428.webp" alt="Manicura y pedicura spa" data-astro-cid-bfjstmwk> <h5 data-astro-cid-bfjstmwk>Manicura y pedicura spa</h5> <p data-astro-cid-bfjstmwk>
+Para distintas zonas de tu cuerpo, con los mejores productos y la
+          mejor técnica.
+</p> </div> </div> <div class="col-md-3 d-flex" data-astro-cid-bfjstmwk> <div class="service-card" data-astro-cid-bfjstmwk> <img src="/Imgs/IMG_7617.webp" alt="Bronceado DHA" data-astro-cid-bfjstmwk> <h5 data-astro-cid-bfjstmwk>Bronceado DHA</h5> <p data-astro-cid-bfjstmwk>
+Para distintas zonas de tu cuerpo, con los mejores productos y la
+          mejor técnica.
+</p> </div> </div> <div class="col-md-3 d-flex" data-astro-cid-bfjstmwk> <div class="service-card" data-astro-cid-bfjstmwk> <img src="/Imgs/IMG_7429.webp" alt="Maquillaje" data-astro-cid-bfjstmwk> <h5 data-astro-cid-bfjstmwk>Maquillaje</h5> <p data-astro-cid-bfjstmwk>
+Para distintas zonas de tu cuerpo, con los mejores productos y la
+          mejor técnica.
+</p> </div> </div> </div>  <div class="treatment-section d-flex flex-column justify-content-center align-items-center text-center" style="
+    min-height: 100vh;
+    background-image: url('/Imgs/Ilustración_sin_título.webp');
+    background-size: cover; /* La imagen cubrirá todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    /* padding-top: 15px; */
+    /* padding-bottom: 15px; */
+    min-width: 100%;
+    
+    " data-astro-cid-bfjstmwk> <div class="col-10" data-astro-cid-bfjstmwk> <h2 class="treatment-title" data-astro-cid-bfjstmwk>
+Los mejores tratamientos para que siempre tengas buena cara
+</h2> </div> <div class="row justify-content-center align-items-center text-center mt-4" data-astro-cid-bfjstmwk> <div class="col-md-2" data-astro-cid-bfjstmwk> <h5 class="treatment-subtitle" data-astro-cid-bfjstmwk>Tratamiento de manchas</h5> <p class="treatment-text" data-astro-cid-bfjstmwk>
+Aumentar la luminosidad de la piel, reducir melasmas de profundidad
+          media y eliminar los superficiales y otras manchas superficiales.
+</p> </div> <div class="col-md-2" data-astro-cid-bfjstmwk> <h5 class="treatment-subtitle" data-astro-cid-bfjstmwk>Peeling medical</h5> <p class="treatment-text" data-astro-cid-bfjstmwk>
+El peeling químico “Mandelico y Láctico” para obtener unos resultados
+          excelentes en manchas, arrugitas e imperfecciones cutáneas.
+</p> </div> <div class="col-md-2" data-astro-cid-bfjstmwk> <h5 class="treatment-subtitle" data-astro-cid-bfjstmwk>Antiaging</h5> <p class="treatment-text" data-astro-cid-bfjstmwk>
+Rellenar arrugas superficiales y medias con ácido hialurónico de alta
+          intensidad. Para pieles con arrugas o con falta de densidad.
+</p> </div> <div class="col-md-2" data-astro-cid-bfjstmwk> <h5 class="treatment-subtitle" data-astro-cid-bfjstmwk>Tratamiento Acné</h5> <p class="treatment-text" data-astro-cid-bfjstmwk>
+Pieles con secuelas de acné donde predomina el tono rosado de las
+          cicatrices y con surcos atróficos moderados. Eliminar las marcas
+          post-acné suaves o incipientes.
+</p> </div> </div> <a href="#" class="btn-reserva mt-4" data-astro-cid-bfjstmwk>Reservar cita</a> </div>   <div class="info-section" style="min-height: 60vh;background-color: #F0E9E1;" data-astro-cid-bfjstmwk> <!-- Redes Sociales --> <div class="social-icons" data-astro-cid-bfjstmwk> <a href="#" data-astro-cid-bfjstmwk><i class="fab fa-instagram" data-astro-cid-bfjstmwk></i></a> <a href="#" data-astro-cid-bfjstmwk><i class="fab fa-facebook-f" data-astro-cid-bfjstmwk></i></a> <a href="#" data-astro-cid-bfjstmwk><i class="fab fa-tiktok" data-astro-cid-bfjstmwk></i></a> </div> <div class="row text-center" style="
+    /* align-items: stretch; */
+    display: flex; /* Activa Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas si el espacio es insuficiente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: stretch; /* Hace que todos los elementos hijos tengan la misma altura */
+    text-align: center; /* Centra el contenido del texto */
+        margin-right: 0px;
+    margin-left: 0px;
+" data-astro-cid-bfjstmwk>  <div class="col-md-5 info-card custom-margin" data-astro-cid-bfjstmwk> <h4 class="info-h4" data-astro-cid-bfjstmwk>Horarios</h4> <p class="info-p" data-astro-cid-bfjstmwk>
+Lunes: Cerrado
+<br data-astro-cid-bfjstmwk>Martes : 10:00 - 20:00
+<br data-astro-cid-bfjstmwk>Miercoles: 10:00 - 20:00
+<br data-astro-cid-bfjstmwk>Jueves: 10:00 - 20:00
+<br data-astro-cid-bfjstmwk>Viernes: 10:00 - 20:00
+<br data-astro-cid-bfjstmwk>Sabado: 10:00 - 20:00
+<br data-astro-cid-bfjstmwk>Domingo: 10:00 - 20:00
+</p> </div> <div class="col-md-5 info-card custom-margin" data-astro-cid-bfjstmwk> <h4 class="info-h4" data-astro-cid-bfjstmwk>Localización</h4> <div style="
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Opcional, para centrar texto */
+" data-astro-cid-bfjstmwk> <div class="location-item" data-astro-cid-bfjstmwk> <!--?xml version="1.0" encoding="utf-8"?--> <!-- Generator: Adobe Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Capa_de_vector_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;width:50px" xml:space="preserve" data-astro-cid-bfjstmwk> <style type="text/css">
+                .st0 {
+                  fill: #a46460;
+                }
+                .st1 {
+                  fill: #ffffff;
+                }
+              </style> <ellipse class="st0" cx="149.76" cy="150.25" rx="147.5" ry="147" data-astro-cid-bfjstmwk></ellipse> <path class="st1" d="M85.69,116.94c0,0.03,0,0.06,0,0.09c0,0,0,0.01,0,0.01C85.69,117.01,85.69,116.98,85.69,116.94z" data-astro-cid-bfjstmwk></path> <path class="st1" d="M85.67,117.22C85.67,117.22,85.67,117.22,85.67,117.22c0,0.01,0,0.03,0,0.04
+                            C85.67,117.25,85.67,117.24,85.67,117.22z" data-astro-cid-bfjstmwk></path> <path class="st1" d="M85.66,117.29c0,0.01,0,0.01,0,0.02C85.66,117.3,85.66,117.29,85.66,117.29z" data-astro-cid-bfjstmwk></path> <path class="st1" d="M149.66,237.92c-0.1,0.02-0.21,0.03-0.31,0.03c-0.37,0-0.73-0.11-1.02-0.36c-4.43-3.7-8.67-7.63-12.71-11.76
                             c-4.32-4.41-8.43-9.05-12.31-13.86c-4.16-5.14-8.06-10.49-11.71-16c-3.71-5.61-7.15-11.39-10.28-17.35
                             c-3.14-5.98-5.98-12.12-8.38-18.44c-2.41-6.33-4.41-12.82-5.76-19.46c-1.24-6.07-1.93-12.31-1.57-18.51
                             c0.03-0.46,0.06-0.91,0.1-1.37v0c-0.04-0.03-0.07-0.06-0.11-0.1c0-0.07,0-0.14,0-0.22c0,0.05,0,0.09,0,0.14
@@ -707,53 +117,17 @@
                             c-0.08-1.18-0.21-2.36-0.41-3.52c-0.23-1.18-0.53-2.35-0.89-3.49c-0.37-1.07-0.79-2.13-1.27-3.17c-0.5-1.02-1.06-2.02-1.66-2.99
                             c-0.63-0.96-1.31-1.88-2.04-2.77c-0.75-0.86-1.54-1.69-2.38-2.48c-0.84-0.75-1.72-1.45-2.62-2.11c-0.93-0.64-1.89-1.23-2.88-1.77
                             c-1.07-0.55-2.18-1.05-3.31-1.48c-1.09-0.38-2.18-0.71-3.3-0.98c-1.18-0.25-2.37-0.44-3.56-0.56c-0.86-0.06-1.72-0.09-2.59-0.09
-                            C149.66,99.92,149.32,99.93,148.97,99.94z"
-                  data-astro-cid-bfjstmwk
-                ></path>
-                <path
-                  class="st1"
-                  d="M212.99,129.37c-0.68-0.13-1.2-0.65-1.36-1.29c-1.19-0.74-0.88-2.73,0.45-3.15c0.89-0.23,1.88-0.34,2.57,0.39
-                            C215.7,126.67,215.12,129.75,212.99,129.37z"
-                  data-astro-cid-bfjstmwk
-                ></path>
-              </svg>
-              <p class="info-p" data-astro-cid-bfjstmwk>
-                Dirección: La Latina, Calle de Camarena, 220, Madrid, 28047
-              </p>
-            </div>
-            <div class="location-item" data-astro-cid-bfjstmwk>
-              <!--?xml version="1.0" encoding="utf-8"?-->
-              <!-- Generator: Adobe Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg
-                version="1.1"
-                id="Capa_de_vector_1_"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 300 300"
-                style="enable-background: new 0 0 300 300; width: 50px"
-                xml:space="preserve"
-                data-astro-cid-bfjstmwk
-              >
-                <style type="text/css">
-                  .st0 {
-                    fill: #a46460;
-                  }
-                  .st1 {
-                    fill: #ffffff;
-                  }
-                </style>
-                <circle
-                  class="st0"
-                  cx="150"
-                  cy="150.01"
-                  r="148"
-                  data-astro-cid-bfjstmwk
-                ></circle>
-                <path
-                  class="st1"
-                  d="M228.77,202.91c0.27,1.55-0.06,3.11-0.72,4.52c-1.02,2.19-2.66,4.04-4.49,5.63c-0.81,0.9-1.7,1.68-2.64,2.4
+                            C149.66,99.92,149.32,99.93,148.97,99.94z" data-astro-cid-bfjstmwk></path> <path class="st1" d="M212.99,129.37c-0.68-0.13-1.2-0.65-1.36-1.29c-1.19-0.74-0.88-2.73,0.45-3.15c0.89-0.23,1.88-0.34,2.57,0.39
+                            C215.7,126.67,215.12,129.75,212.99,129.37z" data-astro-cid-bfjstmwk></path> </svg> <p class="info-p" data-astro-cid-bfjstmwk>
+Dirección: La Latina, Calle de Camarena, 220, Madrid, 28047
+</p> </div> <div class="location-item" data-astro-cid-bfjstmwk> <!--?xml version="1.0" encoding="utf-8"?--> <!-- Generator: Adobe Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Capa_de_vector_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;width:50px" xml:space="preserve" data-astro-cid-bfjstmwk> <style type="text/css">
+                .st0 {
+                  fill: #a46460;
+                }
+                .st1 {
+                  fill: #ffffff;
+                }
+              </style> <circle class="st0" cx="150" cy="150.01" r="148" data-astro-cid-bfjstmwk></circle> <path class="st1" d="M228.77,202.91c0.27,1.55-0.06,3.11-0.72,4.52c-1.02,2.19-2.66,4.04-4.49,5.63c-0.81,0.9-1.7,1.68-2.64,2.4
                             c-1.05,1-2.14,1.95-3.28,2.84c-3.85,3-8.2,5.31-12.81,6.88c-4.96,1.69-10.2,2.46-15.44,2.46c-0.85,0-1.7-0.02-2.54-0.06
                             c-6.04-0.28-11.99-1.59-17.7-3.57c-5.9-2.05-11.52-4.91-16.77-8.28c-1.05-0.68-2.09-1.37-3.11-2.09c-0.13-0.09-0.25-0.2-0.34-0.33
                             c-1.3-0.75-2.58-1.52-3.85-2.31c-4.1-2.54-8.06-5.3-11.9-8.21c-5.11-3.87-10-8.03-14.68-12.41c-4.88-4.58-9.51-9.43-13.88-14.49
@@ -772,45 +146,14 @@
                             c1.86-1.77,3.72-3.55,5.58-5.32c2.97-2.84,5.94-5.67,8.91-8.5c1.38-1.32,2.76-2.64,4.14-3.96c0.2-0.2,0.45-0.32,0.7-0.39
                             c1.04-0.58,2.28-0.86,3.43-0.87c1.4-0.02,2.78,0.27,4.01,0.93c0.18,0.11,0.35,0.23,0.49,0.38c0.11,0.07,0.22,0.16,0.32,0.25
                             c4.04,3.97,8.05,7.97,12.08,11.95c4.5,4.46,9,8.91,13.51,13.37c0.8,0.79,1.6,1.59,2.4,2.38c0.06,0.06,0.11,0.12,0.17,0.17
-                            c0.07,0.07,0.15,0.14,0.22,0.22c0.11,0.11,0.2,0.23,0.27,0.36C228.3,201.42,228.63,202.13,228.77,202.91z"
-                  data-astro-cid-bfjstmwk
-                ></path>
-              </svg>
-              <p class="info-p" data-astro-cid-bfjstmwk>657 505 672</p>
-            </div>
-            <div class="location-item" data-astro-cid-bfjstmwk>
-              <!--?xml version="1.0" encoding="utf-8"?-->
-              <!-- Generator: Adobe Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg
-                version="1.1"
-                id="Capa_de_vector_1_"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 300 300"
-                style="enable-background: new 0 0 300 300; width: 50px"
-                xml:space="preserve"
-                data-astro-cid-bfjstmwk
-              >
-                <style type="text/css">
-                  .st0 {
-                    fill: #a46460;
-                  }
-                  .st1 {
-                    fill: #ffffff;
-                  }
-                </style>
-                <circle
-                  class="st0"
-                  cx="150"
-                  cy="150.01"
-                  r="148"
-                  data-astro-cid-bfjstmwk
-                ></circle>
-                <path
-                  class="st1"
-                  d="M228.77,202.91c0.27,1.55-0.06,3.11-0.72,4.52c-1.02,2.19-2.66,4.04-4.49,5.63c-0.81,0.9-1.7,1.68-2.64,2.4
+                            c0.07,0.07,0.15,0.14,0.22,0.22c0.11,0.11,0.2,0.23,0.27,0.36C228.3,201.42,228.63,202.13,228.77,202.91z" data-astro-cid-bfjstmwk></path> </svg> <p class="info-p" data-astro-cid-bfjstmwk>657 505 672</p> </div> <div class="location-item" data-astro-cid-bfjstmwk> <!--?xml version="1.0" encoding="utf-8"?--> <!-- Generator: Adobe Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Capa_de_vector_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;width:50px" xml:space="preserve" data-astro-cid-bfjstmwk> <style type="text/css">
+                .st0 {
+                  fill: #a46460;
+                }
+                .st1 {
+                  fill: #ffffff;
+                }
+              </style> <circle class="st0" cx="150" cy="150.01" r="148" data-astro-cid-bfjstmwk></circle> <path class="st1" d="M228.77,202.91c0.27,1.55-0.06,3.11-0.72,4.52c-1.02,2.19-2.66,4.04-4.49,5.63c-0.81,0.9-1.7,1.68-2.64,2.4
                             c-1.05,1-2.14,1.95-3.28,2.84c-3.85,3-8.2,5.31-12.81,6.88c-4.96,1.69-10.2,2.46-15.44,2.46c-0.85,0-1.7-0.02-2.54-0.06
                             c-6.04-0.28-11.99-1.59-17.7-3.57c-5.9-2.05-11.52-4.91-16.77-8.28c-1.05-0.68-2.09-1.37-3.11-2.09c-0.13-0.09-0.25-0.2-0.34-0.33
                             c-1.3-0.75-2.58-1.52-3.85-2.31c-4.1-2.54-8.06-5.3-11.9-8.21c-5.11-3.87-10-8.03-14.68-12.41c-4.88-4.58-9.51-9.43-13.88-14.49
@@ -829,114 +172,12 @@
                             c1.86-1.77,3.72-3.55,5.58-5.32c2.97-2.84,5.94-5.67,8.91-8.5c1.38-1.32,2.76-2.64,4.14-3.96c0.2-0.2,0.45-0.32,0.7-0.39
                             c1.04-0.58,2.28-0.86,3.43-0.87c1.4-0.02,2.78,0.27,4.01,0.93c0.18,0.11,0.35,0.23,0.49,0.38c0.11,0.07,0.22,0.16,0.32,0.25
                             c4.04,3.97,8.05,7.97,12.08,11.95c4.5,4.46,9,8.91,13.51,13.37c0.8,0.79,1.6,1.59,2.4,2.38c0.06,0.06,0.11,0.12,0.17,0.17
-                            c0.07,0.07,0.15,0.14,0.22,0.22c0.11,0.11,0.2,0.23,0.27,0.36C228.3,201.42,228.63,202.13,228.77,202.91z"
-                  data-astro-cid-bfjstmwk
-                ></path>
-              </svg>
-              <p class="info-p" data-astro-cid-bfjstmwk>916 684 663</p>
-            </div>
-            <div class="location-item" data-astro-cid-bfjstmwk>
-              <!--?xml version="1.0" encoding="utf-8"?-->
-              <!-- Generator: Adobe Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 300 300"
-                style="enable-background: new 0 0 300 300; width: 50px"
-                xml:space="preserve"
-                data-astro-cid-bfjstmwk
-              >
-                <style type="text/css">
-                  .st0 {
-                    fill: #a46460;
-                  }
-                  .st1 {
-                    fill: #ffffff;
-                  }
-                </style>
-                <circle
-                  class="st0"
-                  cx="149.89"
-                  cy="150.14"
-                  r="146.5"
-                  data-astro-cid-bfjstmwk
-                ></circle>
-                <path
-                  class="st1"
-                  d="M63.5,197v-94c0-5.52,4.48-10,10-10h153c5.52,0,10,4.48,10,10v94c0,5.52-4.48,10-10,10h-153
-                                C67.98,207,63.5,202.52,63.5,197z"
-                  data-astro-cid-bfjstmwk
-                ></path>
-                <rect
-                  x="47.9"
-                  y="118.15"
-                  transform="matrix(0.8419 0.5396 -0.5396 0.8419 81.5633 -37.1047)"
-                  class="st0"
-                  width="112.41"
-                  height="5"
-                  data-astro-cid-bfjstmwk
-                ></rect>
-                <rect
-                  x="145.7"
-                  y="174.37"
-                  transform="matrix(0.8068 0.5909 -0.5909 0.8068 142.5674 -82.1927)"
-                  class="st0"
-                  width="102.5"
-                  height="5"
-                  data-astro-cid-bfjstmwk
-                ></rect>
-                <rect
-                  x="139.44"
-                  y="118.89"
-                  transform="matrix(0.829 -0.5592 0.5592 0.829 -35.0125 128.2505)"
-                  class="st0"
-                  width="105.59"
-                  height="5"
-                  data-astro-cid-bfjstmwk
-                ></rect>
-                <rect
-                  x="48.1"
-                  y="176.03"
-                  transform="matrix(-0.8047 0.5936 -0.5936 -0.8047 288.0662 262.3109)"
-                  class="st0"
-                  width="105.59"
-                  height="5"
-                  data-astro-cid-bfjstmwk
-                ></rect>
-              </svg>
-              <p class="info-p" data-astro-cid-bfjstmwk>vanidosas@</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="map-container" data-astro-cid-bfjstmwk>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.815878158272!2d-3.751887684605525!3d40.389983979368915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4180310e3e6ad3%3A0x8b1ec9dbb013aaf4!2sCalle%20de%20Camarena%2C%20220%2C%2028047%20Madrid!5e0!3m2!1ses!2ses!4v1673209176870!5m2!1ses!2ses"
-        width="80%"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        data-astro-cid-bfjstmwk
-      ></iframe>
-    </div>
-    <div class="footer">
-      <p>Copyright &copy;2025 | Tienda Vanidosas</p>
-      <a href="#">Contacto</a> <a href="#">Política de Privacidad</a>
-      <a href="#">Términos & Condiciones</a>
-    </div>
-    <!-- Botón de WhatsApp -->
-    <a href="https://wa.me/34657505672" target="_blank" class="whatsapp-button">
-      <img src="/Assets/whats.webp" alt="WhatsApp" width="60" height="60" />
-    </a>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-  </body>
-</html>
+                            c0.07,0.07,0.15,0.14,0.22,0.22c0.11,0.11,0.2,0.23,0.27,0.36C228.3,201.42,228.63,202.13,228.77,202.91z" data-astro-cid-bfjstmwk></path> </svg> <p class="info-p" data-astro-cid-bfjstmwk>916 684 663</p> </div> <div class="location-item" data-astro-cid-bfjstmwk> <!--?xml version="1.0" encoding="utf-8"?--> <!-- Generator: Adobe Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;width:50px" xml:space="preserve" data-astro-cid-bfjstmwk> <style type="text/css">
+                .st0 {
+                  fill: #a46460;
+                }
+                .st1 {
+                  fill: #ffffff;
+                }
+              </style> <circle class="st0" cx="149.89" cy="150.14" r="146.5" data-astro-cid-bfjstmwk></circle> <path class="st1" d="M63.5,197v-94c0-5.52,4.48-10,10-10h153c5.52,0,10,4.48,10,10v94c0,5.52-4.48,10-10,10h-153
+                                C67.98,207,63.5,202.52,63.5,197z" data-astro-cid-bfjstmwk></path> <rect x="47.9" y="118.15" transform="matrix(0.8419 0.5396 -0.5396 0.8419 81.5633 -37.1047)" class="st0" width="112.41" height="5" data-astro-cid-bfjstmwk></rect> <rect x="145.7" y="174.37" transform="matrix(0.8068 0.5909 -0.5909 0.8068 142.5674 -82.1927)" class="st0" width="102.5" height="5" data-astro-cid-bfjstmwk></rect> <rect x="139.44" y="118.89" transform="matrix(0.829 -0.5592 0.5592 0.829 -35.0125 128.2505)" class="st0" width="105.59" height="5" data-astro-cid-bfjstmwk></rect> <rect x="48.1" y="176.03" transform="matrix(-0.8047 0.5936 -0.5936 -0.8047 288.0662 262.3109)" class="st0" width="105.59" height="5" data-astro-cid-bfjstmwk></rect> </svg> <p class="info-p" data-astro-cid-bfjstmwk>vanidosas@</p> </div> </div> </div> </div> </div>   <div class="map-container" data-astro-cid-bfjstmwk> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.815878158272!2d-3.751887684605525!3d40.389983979368915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4180310e3e6ad3%3A0x8b1ec9dbb013aaf4!2sCalle%20de%20Camarena%2C%20220%2C%2028047%20Madrid!5e0!3m2!1ses!2ses!4v1673209176870!5m2!1ses!2ses" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy" data-astro-cid-bfjstmwk></iframe> </div>   <div class="footer"> <p>Copyright &copy;2025 | Tienda Vanidosas</p> <a href="#">Contacto</a> <a href="#">Política de Privacidad</a> <a href="#">Términos & Condiciones</a> </div> <!-- Botón de WhatsApp --> <a href="https://wa.me/34657505672" target="_blank" class="whatsapp-button"> <img src="/Imgs/whats.webp" alt="WhatsApp" width="60" height="60"> </a> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script> </body> </html>
