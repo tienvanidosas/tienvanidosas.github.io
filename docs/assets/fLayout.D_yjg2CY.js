@@ -1,6 +1,6 @@
 import { a as createComponent, b as renderTemplate, r as renderComponent, e as renderSlot, f as renderHead } from './fastro/server.CG65eha9.js';
 import 'kleur/colors';
-import { $ as $$Footer, a as $$Header } from './fFooter.BwswSx37.js';
+import { $ as $$Footer, a as $$Header } from './fFooter.DvIn9UOJ.js';
 /* empty css                         */
 /* empty css                           */
 
