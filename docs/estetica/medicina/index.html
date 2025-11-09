@@ -21,6 +21,21 @@ Inicio
           e.stopPropagation();
         });
       });
+
+    // Convertir enlaces relativos "/clinica/..." a URLs absolutas con el dominio actual
+    // Esto permite que en entornos donde se necesita el dominio completo (por ejemplo, compartir enlaces)
+    // los href apunten a "https://dominio/clinica/..." usando location.origin.
+    document.querySelectorAll('a[href^="/clinica/"]').forEach(function (a) {
+      try {
+        // Si ya es absoluto, no tocar
+        if (a.href && a.getAttribute("href").startsWith("/")) {
+          a.href = window.location.origin + a.getAttribute("href");
+        }
+      } catch (err) {
+        // En caso de error, no romper la página
+        // console.debug('convert-clinica-links error', err);
+      }
+    });
   });
 </script>  <section> <div class="container" style="padding-top: 20px;"> <h2 class="text-center my-4">Armonización facial (rellenos)</h2> <div class="carousel-container"> <div class="swiper mySwiper"> <div class="swiper-wrapper"> <div class="swiper-slide"> <div class="card"> <img src="../../Imgs/Labios.webp" alt="Labios" onerror="this.src='https://placehold.co/200x200'"> <div class="card-body"> <h5 class="card-title">Labios</h5> <a href="./../clinica/armonizacion-facial-rellenos" class="btn btn-custom">
 Saber más

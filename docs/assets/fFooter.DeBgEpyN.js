@@ -281,7 +281,42 @@ const $$Header = createComponent(($$result, $$props, $$slots) => {
       })) : []
     }))
   }));
-  return renderTemplate(_a || (_a = __template(["", `<nav class="navbar navbar-expand-lg nav-bg" data-astro-cid-2ro6djlt> <div class="container-fluid" data-astro-cid-2ro6djlt> <a class="navbar-brand" href="#" data-astro-cid-2ro6djlt></a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-astro-cid-2ro6djlt> <span class="navbar-toggler-icon" data-astro-cid-2ro6djlt> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" data-astro-cid-2ro6djlt> <path stroke="#A46460" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22" data-astro-cid-2ro6djlt></path> </svg> </span> </button> <div class="collapse navbar-collapse" id="navbarNav" data-astro-cid-2ro6djlt>  <button class="button-back" onclick="location.href='./../'" data-astro-cid-2ro6djlt> <div class="button-back-box" data-astro-cid-2ro6djlt> <span class="button-back-elem" data-astro-cid-2ro6djlt> <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg" data-astro-cid-2ro6djlt> <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z" data-astro-cid-2ro6djlt></path> </svg> </span> <span class="button-back-elem" data-astro-cid-2ro6djlt> <svg viewBox="0 0 46 40" data-astro-cid-2ro6djlt> <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z" data-astro-cid-2ro6djlt></path> </svg> </span> </div> </button> <ul class="navbar-nav" data-astro-cid-2ro6djlt> <li class="nav-item dropdown" data-astro-cid-2ro6djlt> <a class="nav-link nav-text" href="/clinica"`, ' aria-expanded="false" data-astro-cid-2ro6djlt>\nInicio\n</a> </li> ', ' </ul> </div> </div> </nav> <script type="text/javascript">\n  // Evitar que clicks dentro del dropdown cierren el men\xFA (Bootstrap cierra por defecto)\n  document.addEventListener("DOMContentLoaded", function () {\n    // Para cada dropdown-menu, detener la propagaci\xF3n de clicks internos\n    document.querySelectorAll(".dropdown-menu").forEach(function (menu) {\n      menu.addEventListener("click", function (e) {\n        e.stopPropagation();\n      });\n    });\n\n    // Evitar que los enlaces dentro de los collapses cierren el dropdown\n    document\n      .querySelectorAll(".dropdown-menu .dropdown-item")\n      .forEach(function (link) {\n        link.addEventListener("click", function (e) {\n          // No detener la navegaci\xF3n, solo evitar que Bootstrap cierre el dropdown\n          e.stopPropagation();\n        });\n      });\n  });\n<\/script>'])), maybeRenderHead(), addAttribute(`InicioDropdown`, "id"), menuFromMap.map((root) => renderTemplate`<li class="nav-item dropdown" data-bs-auto-close="outside" data-astro-cid-2ro6djlt> <a class="nav-link nav-text dropdown-toggle" href="#"${addAttribute(`${root.titulo}Dropdown`, "id")} role="button" data-bs-toggle="dropdown" aria-expanded="false" data-astro-cid-2ro6djlt> ${root.titulo} </a> <ul class="dropdown-menu"${addAttribute(`${root.titulo}Dropdown`, "aria-labelledby")} style="background-color: var(--navBg);" data-astro-cid-2ro6djlt> ${root.children.map((cat, catIndex) => {
+  return renderTemplate(_a || (_a = __template(["", `<nav class="navbar navbar-expand-lg nav-bg" data-astro-cid-2ro6djlt> <div class="container-fluid" data-astro-cid-2ro6djlt> <a class="navbar-brand" href="#" data-astro-cid-2ro6djlt></a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-astro-cid-2ro6djlt> <span class="navbar-toggler-icon" data-astro-cid-2ro6djlt> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" data-astro-cid-2ro6djlt> <path stroke="#A46460" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22" data-astro-cid-2ro6djlt></path> </svg> </span> </button> <div class="collapse navbar-collapse" id="navbarNav" data-astro-cid-2ro6djlt>  <button class="button-back" onclick="location.href='./../'" data-astro-cid-2ro6djlt> <div class="button-back-box" data-astro-cid-2ro6djlt> <span class="button-back-elem" data-astro-cid-2ro6djlt> <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg" data-astro-cid-2ro6djlt> <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z" data-astro-cid-2ro6djlt></path> </svg> </span> <span class="button-back-elem" data-astro-cid-2ro6djlt> <svg viewBox="0 0 46 40" data-astro-cid-2ro6djlt> <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z" data-astro-cid-2ro6djlt></path> </svg> </span> </div> </button> <ul class="navbar-nav" data-astro-cid-2ro6djlt> <li class="nav-item dropdown" data-astro-cid-2ro6djlt> <a class="nav-link nav-text" href="/clinica"`, ' aria-expanded="false" data-astro-cid-2ro6djlt>\nInicio\n</a> </li> ', ` </ul> </div> </div> </nav> <script type="text/javascript">
+  // Evitar que clicks dentro del dropdown cierren el men\xFA (Bootstrap cierra por defecto)
+  document.addEventListener("DOMContentLoaded", function () {
+    // Para cada dropdown-menu, detener la propagaci\xF3n de clicks internos
+    document.querySelectorAll(".dropdown-menu").forEach(function (menu) {
+      menu.addEventListener("click", function (e) {
+        e.stopPropagation();
+      });
+    });
+
+    // Evitar que los enlaces dentro de los collapses cierren el dropdown
+    document
+      .querySelectorAll(".dropdown-menu .dropdown-item")
+      .forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          // No detener la navegaci\xF3n, solo evitar que Bootstrap cierre el dropdown
+          e.stopPropagation();
+        });
+      });
+
+    // Convertir enlaces relativos "/clinica/..." a URLs absolutas con el dominio actual
+    // Esto permite que en entornos donde se necesita el dominio completo (por ejemplo, compartir enlaces)
+    // los href apunten a "https://dominio/clinica/..." usando location.origin.
+    document.querySelectorAll('a[href^="/clinica/"]').forEach(function (a) {
+      try {
+        // Si ya es absoluto, no tocar
+        if (a.href && a.getAttribute("href").startsWith("/")) {
+          a.href = window.location.origin + a.getAttribute("href");
+        }
+      } catch (err) {
+        // En caso de error, no romper la p\xE1gina
+        // console.debug('convert-clinica-links error', err);
+      }
+    });
+  });
+<\/script>`])), maybeRenderHead(), addAttribute(`InicioDropdown`, "id"), menuFromMap.map((root) => renderTemplate`<li class="nav-item dropdown" data-bs-auto-close="outside" data-astro-cid-2ro6djlt> <a class="nav-link nav-text dropdown-toggle" href="#"${addAttribute(`${root.titulo}Dropdown`, "id")} role="button" data-bs-toggle="dropdown" aria-expanded="false" data-astro-cid-2ro6djlt> ${root.titulo} </a> <ul class="dropdown-menu"${addAttribute(`${root.titulo}Dropdown`, "aria-labelledby")} style="background-color: var(--navBg);" data-astro-cid-2ro6djlt> ${root.children.map((cat, catIndex) => {
     const catId = `${root.titulo.replace(/\s+/g, "-")}-${catIndex}`;
     if (cat.subcats && cat.subcats.length) {
       return renderTemplate`<li data-astro-cid-2ro6djlt> <div class="d-flex align-items-center justify-content-between px-3" data-astro-cid-2ro6djlt> <span class="dropdown-header mb-0" data-astro-cid-2ro6djlt>${cat.titulo}</span> <button class="btn btn-sm" data-bs-toggle="collapse"${addAttribute(`#collapse-${catId}`, "data-bs-target")} aria-expanded="false"${addAttribute(`collapse-${catId}`, "aria-controls")} data-astro-cid-2ro6djlt> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" data-astro-cid-2ro6djlt> <path fill-rule="evenodd" d="M1.5 6.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 .374.832l-6 6a.5.5 0 0 1-.748 0l-6-6A.5.5 0 0 1 1.5 6.5z" data-astro-cid-2ro6djlt></path> </svg> </button> </div> <ul class="list-unstyled collapse ps-3"${addAttribute(`collapse-${catId}`, "id")} data-astro-cid-2ro6djlt> ${cat.subcats.map((sub, subIndex) => {

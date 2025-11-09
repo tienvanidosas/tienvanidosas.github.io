@@ -22,6 +22,21 @@ Inicio
           e.stopPropagation();
         });
       });
+
+    // Convertir enlaces relativos "/clinica/..." a URLs absolutas con el dominio actual
+    // Esto permite que en entornos donde se necesita el dominio completo (por ejemplo, compartir enlaces)
+    // los href apunten a "https://dominio/clinica/..." usando location.origin.
+    document.querySelectorAll('a[href^="/clinica/"]').forEach(function (a) {
+      try {
+        // Si ya es absoluto, no tocar
+        if (a.href && a.getAttribute("href").startsWith("/")) {
+          a.href = window.location.origin + a.getAttribute("href");
+        }
+      } catch (err) {
+        // En caso de error, no romper la página
+        // console.debug('convert-clinica-links error', err);
+      }
+    });
   });
 </script>  <div class="full-page-container" data-astro-cid-u33jb6tw> <div class="row" style="
     width: 100%;
