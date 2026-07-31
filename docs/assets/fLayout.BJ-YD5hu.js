@@ -33,7 +33,7 @@ const $$Header = createComponent(($$result, $$props, $$slots) => {
 }, "/Users/luisdominguez/Documents/GitHub/TiendaVanidosas.Astro/tienda-vanidosas/src/components/belleza/Header.astro", void 0);
 
 const $$Footer = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${maybeRenderHead()}<div class="footer"> <p>Copyright &copy;2025 | Tienda Vanidosas</p> <a href="#">Contacto</a> <a href="#">Política de Privacidad</a> <a href="#">Términos & Condiciones</a> </div> <!-- Botón de WhatsApp --> <a href="https://wa.me/34657505672" target="_blank" class="whatsapp-button"> <img src="/Imgs/whats.webp" alt="WhatsApp" width="60" height="60"> </a>`;
+  return renderTemplate`${maybeRenderHead()}<div class="footer"> <p>Copyright &copy;2025 | Tienda Vanidosas</p> <a href="#">Contacto</a> <a href="/politica-privacidad">Política de Privacidad</a> <a href="#">Términos & Condiciones</a> </div> <!-- Botón de WhatsApp --> <a href="https://wa.me/34657505672" target="_blank" class="whatsapp-button"> <img src="/Imgs/whats.webp" alt="WhatsApp" width="60" height="60"> </a>`;
 }, "/Users/luisdominguez/Documents/GitHub/TiendaVanidosas.Astro/tienda-vanidosas/src/components/belleza/Footer.astro", void 0);
 
 var __freeze = Object.freeze;
